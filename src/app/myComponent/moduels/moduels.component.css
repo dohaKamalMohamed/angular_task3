@@ -1,0 +1,86 @@
+.container-fluid{
+    margin: 5px;
+}
+
+p{
+    color: red;
+}
+
+.f {
+    width: 50%;
+    margin: 5px;
+    padding: 10px;
+    width: 60%;
+    margin: 5px auto;
+    border:#007bff 1px solid;
+}
+
+
+.f input{
+    margin: 5px;
+}
+
+
+
+.f h3{
+    text-align: center;
+    color: #007bff;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+table tr td {
+    text-align: center;
+}
+
+thead{
+    background-color:#007bff;
+    color:white;
+}
+
+.card-header{
+    position: relative;
+}
+.fa-question{
+    font-size: 35px;
+    color:#007bff;
+    cursor: pointer;
+    position: absolute;
+    top:25%;
+    right:6px;
+    display: block
+    
+}
+
+
+i  .badge{
+    font-size: 0.60rem;
+  position: absolute;
+  right: 0;
+  font-family: 'Oswald', sans-serif;
+}
+table tr td i .fa-edit .fa-plus-circle{
+    font-size: 35px;
+    color:#007bff;
+    cursor: pointer;
+}
+@media (min-width: 768px) {
+    .f ,.cat{
+     margin:5px 10%; 
+     width: 70%
+    }
+    button{
+        margin: 5px;
+    }
+}
+@media (max-width: 768px) {
+    .f ,.cat{
+     margin:0px; 
+     width: 80%
+    }
+    button{
+        margin: 5px;
+    }
+}
+
+

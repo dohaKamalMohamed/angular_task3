@@ -1,0 +1,17 @@
+<div class="chart">
+  <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+    [plugins]="barChartPlugins" [legend]="barChartLegend" [chartType]="barChartType">
+  </canvas>
+</div>
+
+<div class="chart">
+  <canvas baseChart [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType"
+    [options]="pieChartOptions" [plugins]="pieChartPlugins" [legend]="pieChartLegend">
+  </canvas>
+</div>
+
+<div class="chart">
+  <canvas baseChart [data]="pieChartData2" [labels]="pieChartLabels2" [chartType]="pieChartType2"
+    [options]="pieChartOptions" [plugins]="pieChartPlugins2" [legend]="pieChartLegend2">
+  </canvas>
+</div>

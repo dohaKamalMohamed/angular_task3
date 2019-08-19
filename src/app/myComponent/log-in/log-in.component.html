@@ -1,0 +1,27 @@
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <form name="form"  #f="ngForm" novalidate>
+            <input type="text" id="login"  name="email" ngModel #email="ngModel"
+                placeholder="email" required email>
+            <div *ngIf="!email.valid && email.touched">
+                <p  *ngIf="email.errors?.required">email is required </p>
+                <p  *ngIf="email.errors?.email">invalid email</p>
+
+            </div>
+            <input type="password" id="password" name="password" placeholder="password" ngModel
+                #password="ngModel" required pattern="[a-zA-Z ]*">
+            <div *ngIf="!password.valid && password.touched">
+                <p  role="alert" *ngIf="password.errors?.required">password is required </p>
+                <p  role="alert" *ngIf="password.errors?.pattern">password should contain
+                    capital and small letter only </p>
+            </div>
+            <input type="submit"  value="Log In"  [disabled]="f.form.pristine || f.form.invalid" (click)="navigate()">
+        </form>
+
+        <div id="formFooter">
+            <a class="underlineHover" routerLink="/forgetpassword">Forgot Password?</a>
+            <a class="underlineHover" routerLink="/register"> register</a>
+        </div>
+
+    </div>
+</div>

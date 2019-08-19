@@ -1,0 +1,29 @@
+.chart{
+  width: 80vh;
+  height: 50vh;
+  margin:2px auto; 
+}
+
+canvas{
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+ .chart{
+  margin:5px 15%; 
+ }
+ 
+}
+@media  (max-width: 400px) {
+  .chart{
+   margin-left:0px; 
+   width:65vh;
+   height:45vh;
+  }
+  
+ }
+ 
+ 
+
+
+

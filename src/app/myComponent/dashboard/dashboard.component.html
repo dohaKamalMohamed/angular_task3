@@ -1,0 +1,32 @@
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand"> <i class="fa fa-bars" (click)="toggle()"></i> dashboard</a>
+  <ul class="navbar-nav ml-auto nav-flex-icons">
+    <li class="nav-item">
+      <a class="nav-link waves-effect waves-light">
+        <i class="fa fa-bell"> <span class="badge badge-danger">11</span></i> user expiration
+      </a>
+    </li>
+  </ul>
+</nav>
+<div class="d-flex" id="wrapper">
+  <!-- Sidebar -->
+  <div class="bg-light border-right" id="sidebar-wrapper" *ngIf="flag">
+    <div class="list-group">
+      <a routerLink="users" class="list-group-item list-group-item-action bg-light">Users</a>
+      <a routerLink="charts" class="list-group-item list-group-item-action bg-light">Charts</a>
+      <a routerLink="module" class="list-group-item list-group-item-action bg-light">Module</a>
+    </div>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+
+    <div class="container-fluid">
+     <router-outlet></router-outlet>
+    </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->

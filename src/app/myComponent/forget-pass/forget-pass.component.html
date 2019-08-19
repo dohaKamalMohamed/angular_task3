@@ -1,0 +1,16 @@
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <form name="form"  #f="ngForm" novalidate>
+            <input type="text" id="login"  name="email" ngModel #email="ngModel" placeholder="email"
+                required email>
+            <div *ngIf="!email.valid && (email.touched || email.dirty)">
+                <p  *ngIf="email.errors?.required">email is required </p>
+                <p  *ngIf="email.errors?.email">invalid email</p>
+            </div>
+            <input  value="Reset Password" type="submit" [disabled]="f.form.pristine || f.form.invalid">
+        </form>
+        <div id="formFooter">
+            <a class="underlineHover"  routerLink="/login">log in</a>
+        </div>
+    </div>
+</div>

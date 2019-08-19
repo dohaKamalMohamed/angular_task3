@@ -1,0 +1,72 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.navbar a{
+   color: white;
+}
+
+.navbar a .fa{
+  position: relative;
+  width: 36px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.nav-link .fa{
+    display: block;
+}
+
+.navbar a .fa .badge{
+ font-size: 0.75rem;
+  position: absolute;
+  right: 0;
+  font-family: 'Oswald', sans-serif;
+}
+.nav-link{
+    text-align: center;
+    display: table-cell;
+    height: 70px;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: 0px; 
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+  }
+  
+  
+  #sidebar-wrapper .list-group {
+    width: 15rem;
+  }
+  
+  #page-content-wrapper {
+    min-width: 100vw;
+  }
+  
+  
+  @media (max-width: 900px) {
+     #wrapper{
+       position: relative;
+       
+     } 
+     
+    #sidebar-wrapper {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      margin-left: 0;
+      z-index: 1;
+    }
+  
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+  
+
+  }
+  
