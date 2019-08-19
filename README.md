@@ -9,3 +9,8 @@ angular task
 -ngx bootstrap 
 
 -routing 
+
+-deploy on firebase
+
+
+view:https://audit-17.firebaseapp.com
